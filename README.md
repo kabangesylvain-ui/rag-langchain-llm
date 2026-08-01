@@ -17,10 +17,25 @@ Ce projet permet de résumer des documents privés en utilisant la technique **R
 
 ## 🧠 Architecture RAG
 
+![Architecture RAG](images/rag-architecture.png)
+
 | **Composant** | **Description** |
 |---------------|-----------------|
 | **Indexing** | Chargement, split en chunks, embedding et stockage vectoriel |
 | **Retrieval & Generation** | Récupération des chunks pertinents et génération de réponses |
+
+---
+
+## 📊 Exemple d'utilisation
+
+### Interface du chatbot
+![Interface du chatbot](images/chatbot-interface.png)
+
+### Question : What is the smoking policy?
+![Question-Réponse](images/question-answer.png)
+
+### Document source
+![Document source](images/source-document.png)
 
 ---
 
@@ -34,15 +49,6 @@ Ce projet permet de résumer des documents privés en utilisant la technique **R
 
 ---
 
-## 📊 Résultats
-
-- ✅ Chargement et split du document en 16 chunks
-- ✅ Embedding et stockage dans Chroma DB
-- ✅ Question-réponse avec mémoire de conversation
-- ✅ Agent interactif pour poser des questions
-
----
-
 ## 🔧 Installation
 
 ```bash
@@ -51,6 +57,7 @@ git clone https://github.com/kabangesylvain-ui/rag-langchain-llm-summarizer.git
 cd rag-langchain-llm-summarizer
 
 # Installer les dépendances
+
 # Lancer l'agent interactif
 qa()
 pip install -r requirements.txt
